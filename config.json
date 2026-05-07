@@ -1,14 +1,14 @@
 {
-  "pdf_path": "/Users/orodriguez/PycharmProjects/Chatbots/Anillos.pdf",
+  "pdf_path": "C:\\Users\\Administrador\\PycharmProjects\\DiplomadoIA\\Anillos.pdf",
 
   "deeplake": {
-    "dataset_path": "/Users/orodriguez/PycharmProjects/DiplomadoIA/deeplake_db/anillos",
+    "dataset_path": "C:\\Users\\Administrador\\PycharmProjects\\DiplomadoIA\\deeplake_db\\Anillos",
     "read_only": true,
-    "overwrite": true
+    "overwrite": false
   },
 
   "embedding": {
-    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
     "device": "cpu",
     "normalize_embeddings": true
   },
@@ -25,7 +25,7 @@
 
   "llm": {
     "api_base": "https://openrouter.ai/api/v1",
-    "model_name": "mistralai/mistral-7b-instruct",
+    "model_name": "openai/gpt-oss-20b:free",
     "temperature": 0.7
   },
 
@@ -33,7 +33,7 @@
     "type": "summary",
     "enabled": true,
     "retain_across_sessions": false,
-    "summary_model": "meta-llama/llama-3.3-70b-instruct",
+    "summary_model": "openai/gpt-oss-20b:free",
     "max_summary_length": 1000
   },
 
