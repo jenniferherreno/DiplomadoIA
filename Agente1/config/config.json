@@ -1,0 +1,15 @@
+{
+  "llm": {
+    "api_base": "https://openrouter.ai/api/v1",
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "temperature": 0.2
+  },
+  "agent": {
+    "max_iterations": 4
+  },
+  "paths": {
+    "env_file": "/Users/orodriguez/PycharmProjects/DiplomadoIA/.env",
+    "classifier_prompt": "/Users/orodriguez/PycharmProjects/DiplomadoIA/Agente1/prompts/classifier_prompt.txt",
+    "decision_options": "/Users/orodriguez/PycharmProjects/DiplomadoIA/Agente1/decisions/options.json"
+  }
+}
