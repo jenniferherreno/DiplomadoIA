@@ -44,12 +44,17 @@ def main():
         config["paths"]["decision_options"]
     )
 
+    personality = load_text_file(
+        config["paths"]["personality"]
+    )
+
     run_agent_loop(
         llm=llm,
         memory=memory,
         config=config,
         classifier_prompt=classifier_prompt,
-        options=options
+        options=options,
+        personality=personality
     )
 
 

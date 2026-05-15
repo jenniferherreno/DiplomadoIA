@@ -5,11 +5,12 @@
     "temperature": 0.2
   },
   "agent": {
-    "max_iterations": 4
+    "max_iterations": 10
   },
   "paths": {
     "env_file": "/Users/orodriguez/PycharmProjects/DiplomadoIA/.env",
     "classifier_prompt": "/Users/orodriguez/PycharmProjects/DiplomadoIA/Agente1/prompts/classifier_prompt.txt",
-    "decision_options": "/Users/orodriguez/PycharmProjects/DiplomadoIA/Agente1/decisions/options.json"
+    "decision_options": "/Users/orodriguez/PycharmProjects/DiplomadoIA/Agente1/decisions/options.json",
+    "personality": "/Users/orodriguez/PycharmProjects/DiplomadoIA/Agente1/prompts/personality.txt"
   }
 }

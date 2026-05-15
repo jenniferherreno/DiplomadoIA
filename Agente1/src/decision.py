@@ -57,7 +57,8 @@ def classify_intent(
     user_input: str,
     memory,
     classifier_prompt: str,
-    options: dict
+    options: dict,
+    personality: str
 ) -> dict:
 
     functions_text = build_functions_text(options)
@@ -66,6 +67,12 @@ def classify_intent(
         "{functions}",
         functions_text
     )
+
+    system_prompt = f"""
+{personality}
+
+{system_prompt}
+"""
 
     history = memory.load_memory_variables({}).get("history", [])
 

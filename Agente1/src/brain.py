@@ -3,7 +3,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from src.decision import classify_intent, find_option_by_id, load_function
 
 
-def run_agent_loop(llm, memory, config, classifier_prompt, options):
+def run_agent_loop(llm, memory, config, classifier_prompt, options, personality):
     max_iterations = int(config["agent"]["max_iterations"])
 
     print(
@@ -40,7 +40,8 @@ def run_agent_loop(llm, memory, config, classifier_prompt, options):
                 user_input=user_input,
                 memory=memory,
                 classifier_prompt=classifier_prompt,
-                options=options
+                options=options,
+                personality=personality
             )
 
             classify_steps += 1
